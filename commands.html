@@ -1,0 +1,286 @@
+<!-- 
+Template Information
+Name: Discord Bot Website
+Author: Roee Lupo (aka MrSheldon)
+License: MIT
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="MrSheldon">
+	<link id="theme-style" rel="stylesheet" href="css/main.css">
+	<link id="theme-style" rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body bgcolor="#7289DA">
+	<ul>
+		<a href="index.html"><img width="60" height="60" class="animated rotateIn"
+				src="./images/circle-cropped.png" /></a>
+	</ul>
+	<main id="synx-sub-con" class="synx-sub-con">
+		<div class="synx-table animated fadeIn" style="animation-duration: 3s;">
+			<table style="text-align center;" class="table table-hover">
+				<thead>
+					<tr>
+						<th>=Command</th>
+						<th>Enables or disables a command for this guild Syntax: "=command <"enable" or "disable">
+								<Command Name>"</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>=Prefix</td>
+						<td>Displays or sets the prefix for the current guild Syntax: "=prefix [New Prefix]"</td>
+					</tr>
+					<tr>
+						<td>LEO Commands</td>
+						<td>Below Are The LEO Commands</td>
+					</tr>
+					<tr>
+						<td>=CreateTicket</td>
+						<td>Write up a ticket for someone because of something they did. Syntax: "=createticket [Amount]
+							[Court] [Day/Month/Year What they did]"</td>
+					</tr>
+					<tr>
+						<td>=BWV</td>
+						<td>Turn on or off your body cam Aliases: "bodycam" Syntax: "=bwv On / Off"</td>
+					</tr>
+					<tr>
+						<td>=Cuff</td>
+						<td>Put cuff onto someone Syntax: "=cuff [Member]"</td>
+					</tr>
+					<tr>
+						<td>=Lookup</td>
+						<td>Search someones civilian in the database. Syntax: "=lookup [Member`s Roleplay Name]"</td>
+					</tr>
+					<tr>
+						<td>=Radar-Off</td>
+						<td>Turn Off Your Radar.</td>
+					</tr>
+					<tr>
+						<td>=Radar-On</td>
+						<td>Turn on your radar. Syntax: "=radar-on [Postal] [Street Name]"</td>
+					</tr>
+					<tr>
+						<td>=Uncuff</td>
+						<td>Take cuffs off of someone. Syntax: "=uncuff [Member]"</td>
+					</tr>
+					<tr>
+						<td>RP Commands</td>
+						<td>Below Are The RP Commands</td>
+					</tr>
+					<tr>
+						<td>=PayTicket</td>
+						<td>Pay / Delete One of your tickets. Syntax: "=payticket [Ticket ID]"</td>
+					</tr>
+					<tr>
+						<td>=ViewTickets</td>
+						<td>Show all of your tickets</td>
+					</tr>
+					<tr>
+						<td>=Call</td>
+						<td>Call someone and make a private room with them. Syntax: "=call [Member]"</td>
+					</tr>
+					<tr>
+						<td>=End</td>
+						<td>End a call betwenn yourself and someone else. Aliases: "end-call".</td>
+					</tr>
+					<tr>
+						<td>=Inventory</td>
+						<td>Show your inventory</td>
+					</tr>
+					<tr>
+						<td>=Clear-Inventory</td>
+						<td>Clear your inventory</td>
+					</tr>
+					<tr>
+						<td>=Inventory-Add</td>
+						<td>Add an item to your inventory. Syntax: "=inventory-add [Item Name] [Description]"</td>
+					</tr>
+					<tr>
+						<td>=Create-Vehicle</td>
+						<td>Register A Vehicle. Syntax: "=create-vehicle [First Name] [Last Name] [Vehicle First Name] [Vehicle Last Name] [Colour] [License]"
+						</td>
+					</tr>
+					<tr>
+						<td>=Create-Flag</td>
+						<td>Add A Flag To Your Vehicle. Syntax: "=create-flag [License Plate] [Flag]"</td>
+					</tr>
+					<tr>
+						<td>=Delete-Vehicle</td>
+						<td>Delete One Of Your Vehicle's Using The License Plate Number. Syntax: "=delete-vehicle [License Plate]"</td>
+					</tr>
+					<tr>
+						<td>=Vehicle-Lookup</td>
+						<td>Look Up A Vehicle By License. Syntax: "=vehicle-lookup [Vehicle License]"</td>
+					</tr>
+					<tr>
+						<td>=CreateCivilian</td>
+						<td>Create a Civilian. Syntax: "=createcivilian [First Name] [Last Name] [Age] [Job] [Address]"</td>
+					</tr>
+					<tr>
+						<td>=Do</td>
+						<td>Show an in RP Action. Aliases: "action". Syntax: "=do [Action]"</td>
+					</tr>
+					<tr>
+						<td>=Ooc</td>
+						<td>Show an out of RP Action. Aliases: "oocation". Syntax: "=ooc [Action]"</td>
+					</tr>
+					<tr>
+						<td>=Grab</td>
+						<td>Grab someone to stop them from getting away. Aliases: "GrabSomeone". Syntax: "=grab [Member]"</td>
+					</tr>
+					<tr>
+						<td>=Twt</td>
+						<td>Send out a tweet for people to see. Aliases: "twotter". Syntax: "=twt [Twt]"</td>
+					</tr>
+					<tr>
+						<td>=Twt-Reply</td>
+						<td>Send out a tweet to reply to someone. Aliases: "twotter-reply". Syntax: "=twt-reply [@Member] [Twt]"</td>
+					</tr>
+					<tr>
+						<td>=SetName</td>
+						<td>Set the name of the character you want to play as. Aliases: "PlayAs". Syntax: "=setname [Name]"</td>
+					</tr>
+					<tr>
+						<td>=Ungrab</td>
+						<td>Ungrab someone from your character. Aliases: "UngrabSomeone". Syntax: "=ungrab <Member>"</td>
+					</tr>
+					<tr>
+						<td>FD Commands</td>
+						<td>Below Are The FD Commands</td>
+					</tr>
+					<tr>
+						<td>=CPR</td>
+						<td>Start CPR on someone. Aliases: "CPRStart". Syntax: "=cpr [Member]"</td>
+					</tr>
+					<tr>
+						<td>=Charge</td>
+						<td>Charge Up Your AED / DEFIB. Aliases: "chargeup". Syntax: "=charge [Voltage]"</td>
+					</tr>
+					<tr>
+						<td>=Stretcher</td>
+						<td>Put someone onto a stretcher or backboard. Aliases: "backboard". Syntax: "=stretcher [Member]"</td>
+					</tr>
+					<tr>
+						<td>Information</td>
+						<td>Below Are The Information Command</td>
+					</tr>
+					<tr>
+						<td>=Botinfo</td>
+						<td>Displays information about the bot. Aliases: "info", "bot", "stats"</td>
+					</tr>
+					<tr>
+						<td>=Channelinfo</td>
+						<td>Show information on the current channel or a mentioned channel. Aliases: "channel". Syntax: "=channelinfo [Channel]"</td>
+					</tr>
+					<tr>
+						<td>=Roleinfo</td>
+						<td>Show information on a role within the server. Aliases: "role". Syntax: "=roleinfo <Role @ Or Name>"</td>
+					</tr>
+					<tr>
+						<td>=Serverinfo</td>
+						<td>Show information on the current server. Aliases: "Server"</td>
+					</tr>
+					<tr>
+						<td>=Userinfo</td>
+						<td>Show information on yourself or a user. Aliases: "User". Syntax: "=userinfo [User]"</td>
+					</tr>
+					<tr>
+						<td>Misc Commands</td>
+						<td>Below Are The Misc Commands</td>
+					</tr>
+					<tr>
+						<td>=Avatar</td>
+						<td>Display someones avatar. Aliases: "av", "PlayerAv". Syntax: "=avatar [Member]"</td>
+					</tr>
+					<tr>
+						<td>=Botsuggest</td>
+						<td>Send a bot suggestion. Aliases: "bot-suggest". Syntax: "=botsuggest <Suggestion>"</td>
+					</tr>
+					<tr>
+						<td>=Embed</td>
+						<td>Get the bot to echo a message into an embed. Aliases: "esay". Syntax: "=embed <Message>"</td>
+					</tr>
+					<tr>
+						<td>=Nuke</td>
+						<td>Delete the current channel and create it again. Aliases: "removechannel"</td>
+					</tr>
+					<tr>
+						<td>=Say</td>
+						<td>Get the bot to echo a message. Aliases: "channelsay". Syntax: "=say <Message>"</td>
+					</tr>
+					<tr>
+						<td>=Set-LEO</td>
+						<td>Set the LEO Role. Syntax: "=set-leo [LEO Role]"</td>
+					</tr>
+					<tr>
+						<td>=Set-Log</td>
+						<td>Set the logging channel. Syntax: "=set-log [Channel]"</td>
+					</tr>
+					<tr>
+						<td>=Set-Penal</td>
+						<td>Set the penal code. Syntax: "=set-penal [Penal Code]"</td>
+					</tr>
+					<tr>
+						<td>=Suggest</td>
+						<td>Send a suggestion for people to vote on. Aliases: "suggestion". Syntax: "=suggest [Suggestion]"</td>
+					</tr>
+					<tr>
+						<td>SACC Commands</td>
+						<td>Below Are The SACC Commands</td>
+					</tr>
+					<tr>
+						<td>=Createcall</td>
+						<td>Create a call to assign units to. Aliases: "call-create". Syntax: "=createcall [1 / 2 / 3 (Only type the number not "Code")] [Postal] [Location (Connect using -)] [Call Description]"</td>
+					</tr>
+					<tr>
+						<td>=Attach</td>
+						<td>Attach someone to a call. Syntax: "=attach [Member] [callId]"</td>
+					</tr>
+					<tr>
+						<td>=CallInfo</td>
+						<td>Get information on a call. Syntax: "=callinfo [Call ID]"</td>
+					</tr>
+					<tr>
+						<td>=Close</td>
+						<td>Delete a call through this. Syntax: "=close [Call ID]"</td>
+					</tr>
+					<tr>
+						<td>=Create-Bolo</td>
+						<td>Create a bolo on a vehicle or plater. Aliases: "bolo-create", "createbolo". Syntax: "=create-bolo [Type: Vehicle / Player] [Name Of Person / Vehicle] [Wanted For] [Description]"</td>
+					</tr>
+					<tr>
+						<td>=Bolo-Info</td>
+						<td>Show Info On A Bolo. Syntax: "=bolo-info"</td>
+					</tr>
+					<tr>
+						<td>=Delete-Bolo</td>
+						<td>Show Info On A Bolo. Syntax: "=delete-bolo"</td>
+					</tr>
+					<tr>
+						<td>Vehicle Commands</td>
+						<td>Below Are The Vehicle Commands</td>
+					</tr>
+					<tr>
+						<td>=Refuel</td>
+						<td>Fuel up that car and keep it on the road. Aliases: "Fuel-Vehicle". Syntax: "=refuel [Price]"</td>
+					</tr>
+					<tr>
+						<td>=Seatbelt</td>
+						<td>Take Off or Put On Your Seatbelt. Syntax: "=seatbelt [On / Off]"</td>
+					</tr>
+					<tr>
+						<td>=Vehiclecheck</td>
+						<td>Check Over Your Vehicle And Make Sure It Is Safe To Drive. Aliases: "CheckVehicle".</td>
+					</tr>
+
+				</tbody>
+			</table>
+</body>
+
+</html>
